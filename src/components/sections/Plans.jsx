@@ -3,13 +3,13 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { Button } from '../ui/Button';
 
 const plans = [
-  { id: 'online-monthly', category: 'ONLINE', name: 'Mensual', description: 'Acceso mensual a tu plan personalizado' },
-  { id: 'online-quarterly', category: 'ONLINE', name: 'Trimestral', description: 'Descuento por comprometer 3 meses', highlighted: true },
-  { id: 'online-semester', category: 'ONLINE', name: 'Semestral', description: 'La mejor inversión a largo plazo' },
-  { id: 'gym-monthly', category: 'PRESENCIAL', name: 'Mensual', description: 'Sesiones en gimnasio' },
-  { id: 'gym-quarterly', category: 'PRESENCIAL', name: 'Trimestral', description: 'Sesiones en gimnasio - 3 meses' },
-  { id: 'gym-semester', category: 'PRESENCIAL', name: 'Semestral', description: 'Sesiones en gimnasio - 6 meses' },
-  { id: 'home', category: 'DOMICILIO', name: 'Personalizado', description: 'Entrenamientos en tu domicilio' },
+  { id: 'online-monthly', category: 'ONLINE', name: 'Mensual', benefit: 'Sin permanencia', description: 'Empezá ya, sin comprometerte a largo plazo.' },
+  { id: 'online-quarterly', category: 'ONLINE', name: 'Trimestral', benefit: 'Ahorrás vs. mes a mes', description: 'El equilibrio ideal entre resultados y compromiso.', highlighted: true },
+  { id: 'online-semester', category: 'ONLINE', name: 'Semestral', benefit: 'El mejor precio por mes', description: 'Máximo compromiso, máxima transformación.' },
+  { id: 'gym-monthly', category: 'PRESENCIAL', name: 'Mensual', benefit: 'Seguimiento cara a cara', description: 'Entrená conmigo en el gimnasio, mes a mes.' },
+  { id: 'gym-quarterly', category: 'PRESENCIAL', name: 'Trimestral', benefit: 'Resultados visibles', description: 'Tiempo suficiente para ver un cambio real.' },
+  { id: 'gym-semester', category: 'PRESENCIAL', name: 'Semestral', benefit: 'Transformación completa', description: 'El plan más elegido por quienes buscan un cambio serio.' },
+  { id: 'home', category: 'DOMICILIO', name: 'Personalizado', benefit: 'Cero excusas', description: 'Entrená sin salir de tu casa, a tu propio ritmo.' },
 ];
 
 const PlanCard = ({ plan, index, onSelect }) => (
@@ -28,10 +28,17 @@ const PlanCard = ({ plan, index, onSelect }) => (
   >
     {plan.highlighted && (
       <span className="absolute -top-3 left-8 bg-white text-red-primary text-xs font-bold px-3 py-1 rounded-full">
-        Mas elegido
+        Más elegido
       </span>
     )}
-    <h4 className="text-xl font-bold mb-2">{plan.name}</h4>
+    <h4 className="text-xl font-bold mb-3">{plan.name}</h4>
+    <span
+      className={`inline-block text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-4 ${
+        plan.highlighted ? "bg-white text-red-primary" : "bg-red-primary/15 text-red-primary"
+      }`}
+    >
+      {plan.benefit}
+    </span>
     <p className={`text-sm font-light mb-6 ${plan.highlighted ? "text-white/80" : "text-gray-400"}`}>
       {plan.description}
     </p>
@@ -76,7 +83,7 @@ const PlansSection = () => {
             Planes
           </h2>
           <p className="text-lg text-gray-400 font-light">
-            Elegi el formato que mejor se adapte a tu rutina.
+            Elegí el formato que mejor se adapte a tu rutina.
           </p>
         </div>
 
