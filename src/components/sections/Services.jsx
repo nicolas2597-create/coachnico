@@ -55,18 +55,18 @@ export const Services = () => {
     {
       number: "02",
       title: "ONLINE",
-      description: "Tu planificación. Donde estés.",
+      description: "Tu planificacion. Donde estes.",
     },
     {
       number: "03",
-      title: "HÍBRIDO",
+      title: "HIBRIDO",
       description: "Entrenamiento presencial + seguimiento online.",
     },
     {
       number: "04",
       title: "RENDIMIENTO",
-      description: "Preparación física para deportistas.",
-      sports: ["Hockey", "Fútbol", "Judo"],
+      description: "Preparacion fisica para deportistas.",
+      sports: ["Hockey", "Futbol", "Judo"],
     },
   ];
 

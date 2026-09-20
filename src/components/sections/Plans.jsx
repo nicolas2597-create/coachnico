@@ -18,13 +18,13 @@ const PlansSection = () => {
       id: 'online-quarterly',
       category: 'ONLINE',
       name: 'Trimestral',
-      description: 'Obtén descuento comprometiendo 3 meses',
+      description: 'Obten descuento comprometiendo 3 meses',
     },
     {
       id: 'online-semester',
       category: 'ONLINE',
       name: 'Semestral',
-      description: 'Mejor inversión - 6 meses de entrenamiento',
+      description: 'Mejor inversion - 6 meses de entrenamiento',
     },
     {
       id: 'gym-monthly',
@@ -60,7 +60,7 @@ const PlansSection = () => {
 
   const handleSelectPlan = (planId) => {
     const plan = plans.find(p => p.id === planId);
-    const message = `Hola Nicolás, me gustaría información sobre el plan: ${plan.category} - ${plan.name}`;
+    const message = `Hola Nicolas, me gustaria informacion sobre el plan: ${plan.category} - ${plan.name}`;
     const whatsappUrl = `https://wa.me/5492617110170?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

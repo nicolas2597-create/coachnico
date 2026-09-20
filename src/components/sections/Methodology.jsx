@@ -37,7 +37,7 @@ export const Methodology = () => {
     <Section id="metodologia" className="bg-black py-28 md:py-40" animation="none">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <h2 className="text-5xl md:text-7xl font-black text-white mb-32 text-center">
-          METODOLOGÍA
+          METODOLOGIA
         </h2>
 
         <div className="space-y-24 md:space-y-40">

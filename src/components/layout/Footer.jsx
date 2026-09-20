@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-black mb-2">
-              NICOLÁS <span className="text-red-primary">ÁLVAREZ</span>
+              NICOLAS <span className="text-red-primary">ALVAREZ</span>
             </h3>
             <p className="text-gray-400">Entrenamiento Personalizado</p>
           </div>
@@ -35,7 +35,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <div className="text-gray-500 text-sm">
-            © {currentYear} Nicolás Álvarez. Todos los derechos reservados.
+            © {currentYear} Nicolas Alvarez. Todos los derechos reservados.
           </div>
         </div>
       </div>

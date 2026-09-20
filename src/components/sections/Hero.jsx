@@ -14,7 +14,7 @@ export const Hero = () => {
           <div className="flex justify-center md:justify-start">
             <img
               src="/images/logo-red.png"
-              alt="Nicolás Logo"
+              alt="Nicolas Logo"
               className="w-40 md:w-56 h-auto object-contain"
             />
           </div>
@@ -36,7 +36,7 @@ export const Hero = () => {
               </div>
 
               <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-lg">
-                Entrená con un enfoque integral que combina fuerza, judo y entrenamiento funcional para alcanzar tu mejor versión.
+                Entrena con un enfoque integral que combina fuerza, judo y entrenamiento funcional para alcanzar tu mejor version.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 pt-4">
@@ -64,7 +64,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-red-primary/30 to-transparent rounded-3xl blur-3xl" />
               <img
                 src="/images/nicolas-profile.webp"
-                alt="Nicolás Álvarez"
+                alt="Nicolas Alvarez"
                 className="relative w-full h-auto rounded-3xl object-cover shadow-2xl"
               />
               <div className="absolute top-6 right-6 bg-red-primary text-white px-6 py-3 rounded-full text-base font-black">
@@ -81,7 +81,7 @@ export const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-red-primary/30 to-transparent rounded-2xl blur-3xl" />
           <img
             src="/images/nicolas-profile.webp"
-            alt="Nicolás Álvarez"
+            alt="Nicolas Alvarez"
             className="relative w-full h-auto rounded-2xl object-cover shadow-2xl"
           />
           <div className="absolute top-4 right-4 bg-red-primary text-white px-4 py-2 rounded-full text-sm font-bold">

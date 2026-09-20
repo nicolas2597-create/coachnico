@@ -11,14 +11,14 @@ export const Contact = () => {
             ¿EMPEZAMOS?
           </h2>
           <Subtitle className="text-xl text-gray-300">
-            Contáctame y diseñaremos tu plan de entrenamiento personalizado.
+            Contactame y disenaremos tu plan de entrenamiento personalizado.
           </Subtitle>
         </div>
 
         {/* CTA Button */}
         <div className="pt-8">
           <Button
-            href="https://wa.me/5492617110170?text=Hola%20Nicolás,%20vi%20tu%20página%20de%20entrenamiento%20personalizado%20y%20me%20gustaría%20recibir%20información."
+            href="https://wa.me/5492617110170?text=Hola%20Nicolas,%20vi%20tu%20pagina%20de%20entrenamiento%20personalizado%20y%20me%20gustaria%20recibir%20informacion."
             variant="solid"
             size="lg"
             external

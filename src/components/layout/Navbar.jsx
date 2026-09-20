@@ -26,7 +26,7 @@ export const Navbar = () => {
         <div className="h-10 w-10">
           <img
             src="/images/logo-red.png"
-            alt="Nicolás Logo"
+            alt="Nicolas Logo"
             className="h-full w-full object-contain hover:scale-110 transition-transform duration-300"
           />
         </div>
@@ -37,10 +37,10 @@ export const Navbar = () => {
             Servicios
           </a>
           <a href="#sobre-mi" className="text-gray-300 hover:text-red-primary transition-colors duration-300 font-medium">
-            Sobre mí
+            Sobre Mi
           </a>
           <a href="#metodologia" className="text-gray-300 hover:text-red-primary transition-colors duration-300 font-medium">
-            Metodología
+            Metodologia
           </a>
           <a href="#planes" className="text-gray-300 hover:text-red-primary transition-colors duration-300 font-medium">
             Planes

@@ -28,7 +28,7 @@ export const Problem = () => {
         <div className="space-y-8">
           <ScrollStoryItem text="No existen dos personas iguales." delay={0} />
           <ScrollStoryItem
-            text="Tu entrenamiento tampoco debería serlo."
+            text="Tu entrenamiento tampoco deberia serlo."
             delay={100}
           />
         </div>
