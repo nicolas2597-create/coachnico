@@ -14,22 +14,26 @@ const ServiceCard = ({ number, title, description, sports, delay = 0 }) => {
       `}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="glass-morphism p-8 md:p-12 rounded-3xl">
-        <div className="flex items-start gap-6 mb-6">
-          <span className="text-6xl md:text-7xl font-bold text-light-gray-200">
+      <div className="p-12 md:p-16 border border-gray-200 rounded-lg hover:border-gray-400 transition-colors duration-300">
+        <div className="mb-8">
+          <span className="text-6xl md:text-7xl font-light text-gray-300">
             {number}
           </span>
         </div>
 
-        <H3 className="mb-4">{title}</H3>
-        <Body className="mb-6 text-gray-600">{description}</Body>
+        <h3 className="text-2xl md:text-3xl font-light mb-4 text-black">
+          {title}
+        </h3>
+        <p className="text-base md:text-lg text-gray-600 font-light mb-6 leading-relaxed">
+          {description}
+        </p>
 
         {sports && (
-          <div className="flex gap-3 flex-wrap">
+          <div className="flex gap-2 flex-wrap pt-4">
             {sports.map((sport) => (
               <span
                 key={sport}
-                className="text-xs font-medium text-dark-gray-700 bg-light-gray-100 px-3 py-1 rounded-full"
+                className="text-xs font-light text-gray-500 border border-gray-300 px-3 py-1 rounded"
               >
                 {sport}
               </span>
@@ -67,9 +71,9 @@ export const Services = () => {
   ];
 
   return (
-    <Section id="servicios" className="bg-light-gray-50" animation="none">
-      <div className="max-w-6xl mx-auto px-6 md:px-12">
-        <h2 className="text-5xl md:text-6xl font-bold text-black mb-20 text-center">
+    <Section id="servicios" className="bg-white" animation="none">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <h2 className="text-5xl md:text-7xl font-light text-black mb-24 text-center tracking-tight">
           Servicios
         </h2>
 

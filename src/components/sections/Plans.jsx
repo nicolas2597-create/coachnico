@@ -90,27 +90,27 @@ const PlansSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-h1 font-semibold mb-4">PLANES DE ENTRENAMIENTO</h2>
-          <p className="text-body-lg text-gray-600">
+          <h2 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">PLANES DE ENTRENAMIENTO</h2>
+          <p className="text-lg font-light text-gray-600">
             Elige el plan que mejor se adapte a tus necesidades
           </p>
         </motion.div>
 
         {/* Plans Grid */}
         <motion.div
-          className="space-y-12"
+          className="space-y-20"
           variants={containerVariants}
           initial="hidden"
           animate={isVisible ? 'visible' : 'hidden'}
         >
           {/* ONLINE */}
           <div>
-            <h3 className="text-h3 font-semibold mb-6 text-center">ONLINE</h3>
+            <h3 className="text-3xl md:text-4xl font-light mb-12 text-center tracking-tight">ONLINE</h3>
             <motion.div
               className="grid grid-cols-1 md:grid-cols-3 gap-6"
               variants={containerVariants}
@@ -118,16 +118,16 @@ const PlansSection = () => {
               {groupedPlans.ONLINE.map((plan) => (
                 <motion.div
                   key={plan.id}
-                  className="group glass-morphism p-8 cursor-pointer hover:bg-white/15 transition-all duration-300"
+                  className="group p-10 border border-gray-200 rounded-lg cursor-pointer hover:border-gray-400 transition-all duration-300"
                   variants={itemVariants}
                   onClick={() => handleSelectPlan(plan.id)}
                 >
-                  <h4 className="text-h3 font-bold text-gray-800 mb-2">
+                  <h4 className="text-2xl font-light text-gray-800 mb-3 tracking-tight">
                     {plan.name}
                   </h4>
-                  <p className="text-body text-gray-600 mb-6">{plan.description}</p>
+                  <p className="text-base font-light text-gray-600 mb-8 leading-relaxed">{plan.description}</p>
                   <Button variant="glass" className="w-full">
-                    Seleccionar Plan
+                    Seleccionar
                   </Button>
                 </motion.div>
               ))}
@@ -136,7 +136,7 @@ const PlansSection = () => {
 
           {/* PRESENCIAL */}
           <div>
-            <h3 className="text-h3 font-semibold mb-6 text-center">
+            <h3 className="text-3xl md:text-4xl font-light mb-12 text-center tracking-tight">
               PRESENCIAL EN GIMNASIOS
             </h3>
             <motion.div
@@ -146,16 +146,16 @@ const PlansSection = () => {
               {groupedPlans.PRESENCIAL.map((plan) => (
                 <motion.div
                   key={plan.id}
-                  className="group glass-morphism p-8 cursor-pointer hover:bg-white/15 transition-all duration-300"
+                  className="group p-10 border border-gray-200 rounded-lg cursor-pointer hover:border-gray-400 transition-all duration-300"
                   variants={itemVariants}
                   onClick={() => handleSelectPlan(plan.id)}
                 >
-                  <h4 className="text-h3 font-bold text-gray-800 mb-2">
+                  <h4 className="text-2xl font-light text-gray-800 mb-3 tracking-tight">
                     {plan.name}
                   </h4>
-                  <p className="text-body text-gray-600 mb-6">{plan.description}</p>
+                  <p className="text-base font-light text-gray-600 mb-8 leading-relaxed">{plan.description}</p>
                   <Button variant="glass" className="w-full">
-                    Seleccionar Plan
+                    Seleccionar
                   </Button>
                 </motion.div>
               ))}
@@ -164,24 +164,24 @@ const PlansSection = () => {
 
           {/* DOMICILIO */}
           <div>
-            <h3 className="text-h3 font-semibold mb-6 text-center">DOMICILIO</h3>
+            <h3 className="text-3xl md:text-4xl font-light mb-12 text-center tracking-tight">DOMICILIO</h3>
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-1 gap-6 md:w-1/3 md:mx-auto"
+              className="grid grid-cols-1 md:grid-cols-1 gap-6 md:w-1/2 md:mx-auto"
               variants={containerVariants}
             >
               {groupedPlans.DOMICILIO.map((plan) => (
                 <motion.div
                   key={plan.id}
-                  className="group glass-morphism p-8 cursor-pointer hover:bg-white/15 transition-all duration-300"
+                  className="group p-10 border border-gray-200 rounded-lg cursor-pointer hover:border-gray-400 transition-all duration-300"
                   variants={itemVariants}
                   onClick={() => handleSelectPlan(plan.id)}
                 >
-                  <h4 className="text-h3 font-bold text-gray-800 mb-2">
+                  <h4 className="text-2xl font-light text-gray-800 mb-3 tracking-tight">
                     {plan.name}
                   </h4>
-                  <p className="text-body text-gray-600 mb-6">{plan.description}</p>
+                  <p className="text-base font-light text-gray-600 mb-8 leading-relaxed">{plan.description}</p>
                   <Button variant="glass" className="w-full">
-                    Seleccionar Plan
+                    Seleccionar
                   </Button>
                 </motion.div>
               ))}
