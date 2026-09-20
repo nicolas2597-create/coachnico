@@ -1,53 +1,54 @@
 import { Section } from "../layout/Section";
 import { Image } from "../ui/Image";
-import { H1, Body, Label } from "../ui/Typography";
 
 export const About = () => {
   return (
     <Section id="sobre-mi" className="bg-black py-28 md:py-40" animation="none">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-32 items-center">
-          {/* Text Content */}
-          <div className="order-2 md:order-1 space-y-10">
-            <div>
-              <H1 className="text-6xl md:text-7xl font-black leading-tight tracking-tight text-white">
-                NICOLAS
-                <br />
-                <span className="text-red-primary">ALVAREZ</span>
-              </H1>
-            </div>
-
-            <div className="space-y-6">
-              <Label className="text-red-primary text-sm tracking-wide font-black">PROFESIONAL CERTIFICADO</Label>
-              <div className="space-y-3">
-                <Body className="text-lg font-light text-gray-200">
-                  ✓ Profesor de Educacion Fisica
-                </Body>
-                <Body className="text-lg font-light text-gray-200">
-                  ✓ Tecnico Superior en Preparacion Fisica
-                </Body>
-                <Body className="text-lg font-light text-gray-200">
-                  ✓ Profesor de Judo
-                </Body>
-              </div>
-            </div>
-
-            <div className="pt-8 border-t border-red-primary/30">
-              <Body className="text-lg font-light text-gray-300 leading-relaxed">
-                <strong className="font-black text-white">7+ anos de experiencia</strong> disenando programas de entrenamiento para atletas de alto rendimiento y personas en busca de mejorar su salud y bienestar.
-              </Body>
-            </div>
-          </div>
-
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-20 items-center">
           {/* Image */}
-          <div className="order-1 md:order-2">
-            <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-red-primary/40 hover:border-red-primary transition-colors duration-300">
+          <div className="md:col-span-2">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
                 src="/images/nicolas-profile.webp"
-                alt="Nicolas"
+                alt="Nicolas Alvarez"
                 className="w-full h-full object-cover"
                 blurUp
               />
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="md:col-span-3 space-y-8">
+            <p className="text-red-primary text-sm font-semibold tracking-widest uppercase">
+              Sobre mi
+            </p>
+            <h2 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-white">
+              Nicolas
+              <br />
+              Alvarez
+            </h2>
+
+            <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-lg">
+              Profesor de Educacion Fisica, Tecnico Superior en Preparacion Fisica y
+              Profesor de Judo. Mas de 7 anos diseñando programas de entrenamiento
+              para atletas de alto rendimiento y personas que buscan mejorar su
+              salud y bienestar.
+            </p>
+
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 max-w-lg">
+              <div>
+                <div className="text-3xl font-black text-white">7+</div>
+                <div className="text-sm text-gray-500 mt-1">Anos exp.</div>
+              </div>
+              <div>
+                <div className="text-3xl font-black text-white">50+</div>
+                <div className="text-sm text-gray-500 mt-1">Alumnos</div>
+              </div>
+              <div>
+                <div className="text-3xl font-black text-white">3</div>
+                <div className="text-sm text-gray-500 mt-1">Disciplinas</div>
+              </div>
             </div>
           </div>
         </div>

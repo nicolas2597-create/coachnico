@@ -1,30 +1,24 @@
 import { Section } from "../layout/Section";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
-import { H3, Body } from "../ui/Typography";
 
 const ServiceCard = ({ number, title, description, delay = 0 }) => {
-  const [ref, isVisible] = useScrollAnimation({ threshold: 0.3 });
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
 
   return (
     <div
       ref={ref}
       className={`
-        transition-all duration-700
+        transition-all duration-700 ease-out
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
       `}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="p-12 md:p-16 border-2 border-red-primary/30 rounded-2xl hover:border-red-primary hover:bg-red-primary/5 transition-all duration-300 bg-black group cursor-pointer">
-        <div className="mb-8">
-          <span className="text-6xl md:text-7xl font-black text-red-primary group-hover:scale-110 transition-transform duration-300">
-            {number}
-          </span>
-        </div>
-
-        <h3 className="text-3xl md:text-4xl font-black mb-4 text-white">
+      <div className="h-full p-10 md:p-12 rounded-3xl bg-white/[0.03] border border-white/10 hover:border-red-primary/40 hover:bg-white/[0.05] transition-all duration-300">
+        <span className="text-sm font-semibold text-red-primary tracking-widest">{number}</span>
+        <h3 className="text-2xl md:text-3xl font-bold text-white mt-4 mb-3 tracking-tight">
           {title}
         </h3>
-        <p className="text-base md:text-lg text-gray-300 font-light mb-6 leading-relaxed">
+        <p className="text-base text-gray-400 font-light leading-relaxed">
           {description}
         </p>
       </div>
@@ -36,40 +30,41 @@ export const Services = () => {
   const services = [
     {
       number: "01",
-      title: "PERSONALIZADO",
-      description: "Entrenamientos adaptados completamente a tus necesidades, objetivo y nivel actual.",
+      title: "Personalizado",
+      description: "Entrenamiento adaptado por completo a tu objetivo, tu nivel y tu tiempo disponible.",
     },
     {
       number: "02",
-      title: "ONLINE",
-      description: "Entrena donde estes. Planes, seguimiento y ajustes via digital.",
+      title: "Online",
+      description: "Tu plan, donde estes. Seguimiento y ajustes semanales a distancia.",
     },
     {
       number: "03",
-      title: "HIBRIDO",
-      description: "Combinamos sesiones presenciales con seguimiento online continuo.",
+      title: "Hibrido",
+      description: "Sesiones presenciales combinadas con seguimiento online continuo.",
     },
     {
       number: "04",
-      title: "RENDIMIENTO",
-      description: "Preparacion fisica especializada para atletas de hockey, futbol y judo.",
+      title: "Rendimiento",
+      description: "Preparacion fisica especializada para hockey, futbol y judo.",
     },
   ];
 
   return (
     <Section id="servicios" className="bg-black py-28 md:py-40" animation="none">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-5xl md:text-7xl font-black text-white mb-32 text-center">
-          SERVICIOS
-        </h2>
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
+        <div className="max-w-2xl mb-16 md:mb-20">
+          <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight mb-4">
+            Servicios
+          </h2>
+          <p className="text-lg text-gray-400 font-light">
+            Distintas formas de entrenar, un mismo nivel de exigencia.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {services.map((service, idx) => (
-            <ServiceCard
-              key={idx}
-              {...service}
-              delay={idx * 100}
-            />
+            <ServiceCard key={idx} {...service} delay={idx * 80} />
           ))}
         </div>
       </div>

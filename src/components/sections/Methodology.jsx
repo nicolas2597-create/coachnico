@@ -1,25 +1,29 @@
 import { Section } from "../layout/Section";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
-const MethodologyStep = ({ number, title, delay = 0 }) => {
+const MethodologyStep = ({ number, title, description, delay = 0 }) => {
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.4 });
 
   return (
     <div
       ref={ref}
       className={`
-        transition-all duration-700
-        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
+        flex items-start gap-6 md:gap-10
+        transition-all duration-700 ease-out
+        ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}
       `}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="text-center">
-        <div className="text-6xl md:text-8xl font-black text-red-primary mb-4">
-          {number}
-        </div>
-        <h3 className="text-3xl md:text-4xl font-black text-white">
+      <div className="text-3xl md:text-4xl font-black text-red-primary shrink-0 w-16">
+        {number}
+      </div>
+      <div className="pb-10 md:pb-14 border-b border-white/10 flex-1">
+        <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight mb-2">
           {title}
         </h3>
+        <p className="text-base md:text-lg text-gray-400 font-light max-w-lg">
+          {description}
+        </p>
       </div>
     </div>
   );
@@ -27,27 +31,22 @@ const MethodologyStep = ({ number, title, delay = 0 }) => {
 
 export const Methodology = () => {
   const steps = [
-    { number: "01", title: "EVALUAR" },
-    { number: "02", title: "PLANIFICAR" },
-    { number: "03", title: "ENTRENAR" },
-    { number: "04", title: "EVOLUCIONAR" },
+    { number: "01", title: "Evaluar", description: "Analizamos tu punto de partida, objetivos y disponibilidad." },
+    { number: "02", title: "Planificar", description: "Diseñamos un programa a medida, con metas claras y medibles." },
+    { number: "03", title: "Entrenar", description: "Ejecutamos con seguimiento constante y ajustes en tiempo real." },
+    { number: "04", title: "Evolucionar", description: "Medimos resultados y llevamos el plan al siguiente nivel." },
   ];
 
   return (
     <Section id="metodologia" className="bg-black py-28 md:py-40" animation="none">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
-        <h2 className="text-5xl md:text-7xl font-black text-white mb-32 text-center">
-          METODOLOGIA
+        <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight mb-16 md:mb-24">
+          Metodologia
         </h2>
 
-        <div className="space-y-24 md:space-y-40">
+        <div className="space-y-0">
           {steps.map((step, idx) => (
-            <MethodologyStep
-              key={idx}
-              number={step.number}
-              title={step.title}
-              delay={idx * 150}
-            />
+            <MethodologyStep key={idx} {...step} delay={idx * 100} />
           ))}
         </div>
       </div>

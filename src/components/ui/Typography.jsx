@@ -1,26 +1,26 @@
 export const H1 = ({ children, className = "" }) => (
-  <h1 className={`text-hero-xl font-bold tracking-tight text-black ${className}`}>
+  <h1 className={`font-black tracking-tight ${className}`}>
     {children}
   </h1>
 );
 
 export const H2 = ({ children, className = "" }) => (
-  <h2 className={`text-h1 font-semibold text-black ${className}`}>
+  <h2 className={`font-black tracking-tight ${className}`}>
     {children}
   </h2>
 );
 
 export const H3 = ({ children, className = "" }) => (
-  <h3 className={`text-h2 font-semibold text-black ${className}`}>
+  <h3 className={`font-bold tracking-tight ${className}`}>
     {children}
   </h3>
 );
 
 export const Body = ({ children, className = "", size = "base" }) => {
   const sizeClasses = {
-    sm: "text-small text-dark-gray-700",
-    base: "text-body text-dark-gray-700",
-    lg: "text-body-lg text-dark-gray-700",
+    sm: "text-sm",
+    base: "text-base",
+    lg: "text-lg",
   };
   return (
     <p className={`${sizeClasses[size]} ${className}`}>
@@ -30,13 +30,13 @@ export const Body = ({ children, className = "", size = "base" }) => {
 };
 
 export const Subtitle = ({ children, className = "" }) => (
-  <p className={`text-body text-gray-500 ${className}`}>
+  <p className={`text-lg font-light ${className}`}>
     {children}
   </p>
 );
 
 export const Label = ({ children, className = "" }) => (
-  <span className={`text-small font-medium text-dark-gray-700 ${className}`}>
+  <span className={`text-sm font-semibold uppercase tracking-widest ${className}`}>
     {children}
   </span>
 );
