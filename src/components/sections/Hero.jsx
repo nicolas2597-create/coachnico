@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="/images/nicolas-profile.webp"
-          alt="Nicolas Alvarez"
+          alt="Nicolás Álvarez"
           className="w-full h-full object-cover object-top opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
@@ -36,7 +36,7 @@ export const Hero = () => {
               Ver planes
             </Button>
             <Button href="https://wa.me/5492617110170" variant="outline" size="lg" external>
-              Hablar con Nicolas
+              Hablar con Nicolás
             </Button>
           </div>
         </div>

@@ -13,8 +13,8 @@ export const Navbar = () => {
 
   const links = [
     { href: "#servicios", label: "Servicios" },
-    { href: "#sobre-mi", label: "Sobre mi" },
-    { href: "#metodologia", label: "Metodologia" },
+    { href: "#sobre-mi", label: "Sobre mí" },
+    { href: "#metodologia", label: "Metodología" },
     { href: "#planes", label: "Planes" },
   ];
 
@@ -32,11 +32,11 @@ export const Navbar = () => {
           <a href="#" className="flex items-center gap-2 shrink-0">
             <img
               src="/images/logo-red.png"
-              alt="Nicolas"
+              alt="Nicolás"
               className="h-8 w-auto object-contain"
             />
             <span className="text-white font-semibold tracking-tight text-[15px]">
-              Nicolas Alvarez
+              Nicolás Álvarez
             </span>
           </a>
 

@@ -36,17 +36,17 @@ export const Services = () => {
     {
       number: "02",
       title: "Online",
-      description: "Tu plan, donde estes. Seguimiento y ajustes semanales a distancia.",
+      description: "Tu plan, donde estés. Seguimiento y ajustes semanales a distancia.",
     },
     {
       number: "03",
-      title: "Hibrido",
+      title: "Híbrido",
       description: "Sesiones presenciales combinadas con seguimiento online continuo.",
     },
     {
       number: "04",
       title: "Rendimiento",
-      description: "Preparacion fisica especializada para hockey, futbol y judo.",
+      description: "Preparación física especializada para hockey, fútbol y judo.",
     },
   ];
 

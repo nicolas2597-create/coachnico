@@ -14,7 +14,7 @@ export const Contact = () => {
 
         <div className="flex justify-center mb-20">
           <Button
-            href="https://wa.me/5492617110170?text=Hola%20Nicolas,%20vi%20tu%20pagina%20y%20me%20gustaria%20recibir%20informacion."
+            href="https://wa.me/5492617110170?text=Hola%20Nicol%C3%A1s%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
             variant="solid"
             size="lg"
             external

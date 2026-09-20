@@ -41,7 +41,7 @@ export const Methodology = () => {
     <Section id="metodologia" className="bg-black py-28 md:py-40" animation="none">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight mb-16 md:mb-24">
-          Metodologia
+          Metodología
         </h2>
 
         <div className="space-y-0">

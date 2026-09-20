@@ -26,7 +26,7 @@ export const Problem = () => {
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <div className="space-y-3 mb-24 md:mb-32">
           <ScrollStoryItem text="No existen dos personas iguales." delay={0} />
-          <ScrollStoryItem text="Tu entrenamiento tampoco deberia serlo." accent delay={100} />
+          <ScrollStoryItem text="Tu entrenamiento tampoco debería serlo." accent delay={100} />
         </div>
 
         <div className="space-y-6 md:space-y-8">

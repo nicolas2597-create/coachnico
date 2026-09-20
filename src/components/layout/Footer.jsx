@@ -6,8 +6,8 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/images/logo-red.png" alt="Nicolas" className="h-6 w-auto object-contain" />
-            <span className="text-sm text-gray-400">Nicolas Alvarez</span>
+            <img src="/images/logo-red.png" alt="Nicolás" className="h-6 w-auto object-contain" />
+            <span className="text-sm text-gray-400">Nicolás Álvarez</span>
           </div>
 
           <div className="flex gap-8">
@@ -30,7 +30,7 @@ export const Footer = () => {
           </div>
 
           <div className="text-xs text-gray-600">
-            © {currentYear} Nicolas Alvarez
+            © {currentYear} Nicolás Álvarez
           </div>
         </div>
       </div>

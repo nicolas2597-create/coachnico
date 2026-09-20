@@ -5,7 +5,7 @@ import { Button } from '../ui/Button';
 const plans = [
   { id: 'online-monthly', category: 'ONLINE', name: 'Mensual', description: 'Acceso mensual a tu plan personalizado' },
   { id: 'online-quarterly', category: 'ONLINE', name: 'Trimestral', description: 'Descuento por comprometer 3 meses', highlighted: true },
-  { id: 'online-semester', category: 'ONLINE', name: 'Semestral', description: 'La mejor inversion a largo plazo' },
+  { id: 'online-semester', category: 'ONLINE', name: 'Semestral', description: 'La mejor inversión a largo plazo' },
   { id: 'gym-monthly', category: 'PRESENCIAL', name: 'Mensual', description: 'Sesiones en gimnasio' },
   { id: 'gym-quarterly', category: 'PRESENCIAL', name: 'Trimestral', description: 'Sesiones en gimnasio - 3 meses' },
   { id: 'gym-semester', category: 'PRESENCIAL', name: 'Semestral', description: 'Sesiones en gimnasio - 6 meses' },
@@ -64,7 +64,7 @@ const PlansSection = () => {
   };
 
   const handleSelectPlan = (plan) => {
-    const message = `Hola Nicolas, me gustaria informacion sobre el plan: ${plan.category} - ${plan.name}`;
+    const message = `Hola Nicolás, me gustaría información sobre el plan: ${plan.category} - ${plan.name}`;
     window.open(`https://wa.me/5492617110170?text=${encodeURIComponent(message)}`, '_blank');
   };
 
