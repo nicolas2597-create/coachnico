@@ -13,9 +13,9 @@ export const Hero = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="flex justify-center md:justify-start">
             <img
-              src="/images/logo-red.svg"
+              src="/images/logo-red.png"
               alt="Nicolás Logo"
-              className="w-32 md:w-48 h-auto object-contain"
+              className="w-40 md:w-56 h-auto object-contain"
             />
           </div>
         </div>
