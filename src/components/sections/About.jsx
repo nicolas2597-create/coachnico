@@ -8,7 +8,7 @@ export const About = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-32 items-center">
           {/* Text Content */}
-          <div className="order-2 md:order-1 space-y-12">
+          <div className="order-2 md:order-1 space-y-10">
             <div>
               <H1 className="text-6xl md:text-7xl font-black leading-tight tracking-tight text-white">
                 NICOLAS
@@ -18,7 +18,7 @@ export const About = () => {
             </div>
 
             <div className="space-y-6">
-              <Label className="text-red-primary text-sm tracking-wide font-bold">PROFESIONAL</Label>
+              <Label className="text-red-primary text-sm tracking-wide font-black">PROFESIONAL CERTIFICADO</Label>
               <div className="space-y-3">
                 <Body className="text-lg font-light text-gray-200">
                   ✓ Profesor de Educacion Fisica
@@ -32,19 +32,19 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="pt-12 border-t border-red-primary/30">
+            <div className="pt-8 border-t border-red-primary/30">
               <Body className="text-lg font-light text-gray-300 leading-relaxed">
-                <strong className="font-bold text-white">+7 anos de experiencia</strong> disenando programas de entrenamiento para atletas de alto rendimiento y personas en busca de mejorar su salud y bienestar.
+                <strong className="font-black text-white">7+ anos de experiencia</strong> disenando programas de entrenamiento para atletas de alto rendimiento y personas en busca de mejorar su salud y bienestar.
               </Body>
             </div>
           </div>
 
           {/* Image */}
           <div className="order-1 md:order-2">
-            <div className="relative aspect-square rounded-xl overflow-hidden border-2 border-red-primary/30 hover:border-red-primary transition-colors duration-300">
+            <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-red-primary/40 hover:border-red-primary transition-colors duration-300">
               <Image
                 src="/images/nicolas-profile.webp"
-                alt="Nicolas Alvarez"
+                alt="Nicolas"
                 className="w-full h-full object-cover"
                 blurUp
               />

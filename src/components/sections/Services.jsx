@@ -2,7 +2,7 @@ import { Section } from "../layout/Section";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import { H3, Body } from "../ui/Typography";
 
-const ServiceCard = ({ number, title, description, sports, delay = 0 }) => {
+const ServiceCard = ({ number, title, description, delay = 0 }) => {
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.3 });
 
   return (
@@ -14,32 +14,19 @@ const ServiceCard = ({ number, title, description, sports, delay = 0 }) => {
       `}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="p-12 md:p-16 border-2 border-red-primary/30 rounded-xl hover:border-red-primary hover:bg-red-primary/5 transition-all duration-300 bg-black">
+      <div className="p-12 md:p-16 border-2 border-red-primary/30 rounded-2xl hover:border-red-primary hover:bg-red-primary/5 transition-all duration-300 bg-black group cursor-pointer">
         <div className="mb-8">
-          <span className="text-6xl md:text-7xl font-black text-red-primary">
+          <span className="text-6xl md:text-7xl font-black text-red-primary group-hover:scale-110 transition-transform duration-300">
             {number}
           </span>
         </div>
 
-        <h3 className="text-2xl md:text-3xl font-black mb-4 text-white">
+        <h3 className="text-3xl md:text-4xl font-black mb-4 text-white">
           {title}
         </h3>
         <p className="text-base md:text-lg text-gray-300 font-light mb-6 leading-relaxed">
           {description}
         </p>
-
-        {sports && (
-          <div className="flex gap-2 flex-wrap pt-4">
-            {sports.map((sport) => (
-              <span
-                key={sport}
-                className="text-xs font-semibold text-red-primary border border-red-primary/50 px-3 py-1 rounded-full"
-              >
-                {sport}
-              </span>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
@@ -50,23 +37,22 @@ export const Services = () => {
     {
       number: "01",
       title: "PERSONALIZADO",
-      description: "Entrenamiento presencial adaptado completamente a vos.",
+      description: "Entrenamientos adaptados completamente a tus necesidades, objetivo y nivel actual.",
     },
     {
       number: "02",
       title: "ONLINE",
-      description: "Tu planificacion. Donde estes.",
+      description: "Entrena donde estes. Planes, seguimiento y ajustes via digital.",
     },
     {
       number: "03",
       title: "HIBRIDO",
-      description: "Entrenamiento presencial + seguimiento online.",
+      description: "Combinamos sesiones presenciales con seguimiento online continuo.",
     },
     {
       number: "04",
       title: "RENDIMIENTO",
-      description: "Preparacion fisica para deportistas.",
-      sports: ["Hockey", "Futbol", "Judo"],
+      description: "Preparacion fisica especializada para atletas de hockey, futbol y judo.",
     },
   ];
 

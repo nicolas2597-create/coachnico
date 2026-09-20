@@ -1,5 +1,5 @@
 import { Section } from "../layout/Section";
-import { H1, Body, Subtitle, Label } from "../ui/Typography";
+import { Subtitle, Label } from "../ui/Typography";
 import { Button } from "../ui/Button";
 
 export const Contact = () => {
@@ -8,7 +8,7 @@ export const Contact = () => {
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center space-y-16">
         <div>
           <h2 className="text-5xl md:text-7xl font-black mb-8">
-            ¿EMPEZAMOS?
+            EMPEZAMOS?
           </h2>
           <Subtitle className="text-xl text-gray-300">
             Contactame y disenaremos tu plan de entrenamiento personalizado.
@@ -22,7 +22,7 @@ export const Contact = () => {
             variant="solid"
             size="lg"
             external
-            className="bg-red-primary hover:bg-red-dark text-white font-bold"
+            className="bg-red-primary hover:bg-red-dark text-white font-black text-lg px-12 py-4"
           >
             HABLAR POR WHATSAPP
           </Button>
@@ -31,22 +31,22 @@ export const Contact = () => {
         {/* Alternative Contact Methods */}
         <div className="pt-12 border-t border-red-primary/30 space-y-6">
           <div>
-            <Label className="text-red-primary block mb-2 text-sm tracking-wide font-bold">WHATSAPP</Label>
+            <Label className="text-red-primary block mb-2 text-sm tracking-wide font-black">WHATSAPP</Label>
             <a
               href="tel:+5492617110170"
-              className="text-xl text-white hover:text-red-primary transition-colors duration-300"
+              className="text-xl text-white hover:text-red-primary transition-colors duration-300 font-light"
             >
               +54 9 261 711 0170
             </a>
           </div>
 
           <div>
-            <Label className="text-red-primary block mb-2 text-sm tracking-wide font-bold">INSTAGRAM</Label>
+            <Label className="text-red-primary block mb-2 text-sm tracking-wide font-black">INSTAGRAM</Label>
             <a
               href="https://instagram.com/coachnico.fitt"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl text-white hover:text-red-primary transition-colors duration-300"
+              className="text-xl text-white hover:text-red-primary transition-colors duration-300 font-light"
             >
               @coachnico.fitt
             </a>
