@@ -43,7 +43,7 @@ export const About = () => {
           <div className="order-1 md:order-2">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-glass">
               <Image
-                src="/images/profile-placeholder.jpg"
+                src="/images/nicolas-profile.webp"
                 alt="Nicolás Álvarez"
                 className="w-full h-full object-cover"
                 blurUp

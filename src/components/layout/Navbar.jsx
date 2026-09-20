@@ -27,8 +27,12 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-black">
-          NICOLÁS
+        <div className="h-12 w-12">
+          <img
+            src="/images/logo-red.png"
+            alt="Nicolás Logo"
+            className="h-full w-full object-contain hover:scale-110 transition-transform duration-300"
+          />
         </div>
 
         {/* Navigation Links */}
@@ -50,6 +54,12 @@ export const Navbar = () => {
             className="text-dark-gray-700 hover:text-black transition-colors duration-300"
           >
             Metodología
+          </a>
+          <a
+            href="#planes"
+            className="text-dark-gray-700 hover:text-black transition-colors duration-300"
+          >
+            Planes
           </a>
         </div>
 
