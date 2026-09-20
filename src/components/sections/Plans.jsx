@@ -86,7 +86,7 @@ const PlansSection = () => {
   };
 
   return (
-    <section id="planes" ref={ref} className="py-16 px-5 md:py-32 md:px-12 bg-black">
+    <section id="planes" ref={ref} className="py-28 md:py-40 px-5 md:px-12 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <motion.div

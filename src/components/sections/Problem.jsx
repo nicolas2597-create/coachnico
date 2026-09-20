@@ -13,7 +13,7 @@ const ScrollStoryItem = ({ text, delay = 0 }) => {
       `}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <p className="text-4xl md:text-5xl font-bold text-black leading-tight">
+      <p className="text-4xl md:text-6xl font-black text-white leading-tight">
         {text}
       </p>
     </div>
@@ -22,8 +22,8 @@ const ScrollStoryItem = ({ text, delay = 0 }) => {
 
 export const Problem = () => {
   return (
-    <Section id="problema" className="bg-white" animation="none">
-      <div className="max-w-4xl mx-auto px-6 md:px-12 space-y-24">
+    <Section id="problema" className="bg-black" animation="none">
+      <div className="max-w-4xl mx-auto px-6 md:px-12 space-y-32 py-20">
         {/* Main Problem Statement */}
         <div className="space-y-8">
           <ScrollStoryItem text="No existen dos personas iguales." delay={0} />

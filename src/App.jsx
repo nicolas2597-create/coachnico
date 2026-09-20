@@ -10,7 +10,7 @@ import { Contact } from './components/sections/Contact'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
+    <div className="min-h-screen bg-black overflow-x-hidden">
       <Navbar />
       <Hero />
       <Problem />

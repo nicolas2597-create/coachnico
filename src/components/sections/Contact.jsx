@@ -4,8 +4,8 @@ import { Button } from "../ui/Button";
 
 export const Contact = () => {
   return (
-    <Section id="contacto" className="bg-black text-white" animation="fade-in">
-      <div className="max-w-4xl mx-auto px-6 md:px-12 text-center space-y-12">
+    <Section id="contacto" className="bg-black text-white py-28 md:py-40" animation="fade-in">
+      <div className="max-w-4xl mx-auto px-6 md:px-12 text-center space-y-16">
         <div>
           <h2 className="text-5xl md:text-7xl font-black mb-8">
             ¿EMPEZAMOS?

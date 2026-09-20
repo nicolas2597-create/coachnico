@@ -71,13 +71,13 @@ export const Services = () => {
   ];
 
   return (
-    <Section id="servicios" className="bg-black" animation="none">
+    <Section id="servicios" className="bg-black py-28 md:py-40" animation="none">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-5xl md:text-7xl font-black text-white mb-24 text-center">
+        <h2 className="text-5xl md:text-7xl font-black text-white mb-32 text-center">
           SERVICIOS
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           {services.map((service, idx) => (
             <ServiceCard
               key={idx}
