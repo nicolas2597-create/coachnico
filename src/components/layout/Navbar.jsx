@@ -33,7 +33,7 @@ export const Navbar = () => {
             <img
               src="/images/logo-red.png"
               alt="Nicolas"
-              className="h-7 w-7 object-contain"
+              className="h-8 w-auto object-contain"
             />
             <span className="text-white font-semibold tracking-tight text-[15px]">
               Nicolas Alvarez

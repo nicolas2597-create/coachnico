@@ -6,7 +6,7 @@ export const Contact = () => {
     <Section id="contacto" className="bg-black py-28 md:py-48" animation="fade-in">
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8">
-          Empezamos?
+          ¿Empezamos?
         </h2>
         <p className="text-lg md:text-2xl text-gray-400 font-light mb-12 max-w-xl mx-auto">
           Contame tu objetivo y armamos juntos tu plan de entrenamiento.

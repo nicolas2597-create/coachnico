@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/images/logo-red.png" alt="Nicolas" className="h-5 w-5 object-contain" />
+            <img src="/images/logo-red.png" alt="Nicolas" className="h-6 w-auto object-contain" />
             <span className="text-sm text-gray-400">Nicolas Alvarez</span>
           </div>
 

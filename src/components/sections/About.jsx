@@ -5,10 +5,10 @@ export const About = () => {
   return (
     <Section id="sobre-mi" className="bg-black py-28 md:py-40" animation="none">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-20 items-stretch">
           {/* Image */}
           <div className="md:col-span-2">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
+            <div className="relative h-full min-h-[320px] rounded-3xl overflow-hidden">
               <Image
                 src="/images/nicolas-profile.webp"
                 alt="Nicolas Alvarez"
@@ -36,19 +36,9 @@ export const About = () => {
               salud y bienestar.
             </p>
 
-            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 max-w-lg">
-              <div>
-                <div className="text-3xl font-black text-white">7+</div>
-                <div className="text-sm text-gray-500 mt-1">Anos exp.</div>
-              </div>
-              <div>
-                <div className="text-3xl font-black text-white">50+</div>
-                <div className="text-sm text-gray-500 mt-1">Alumnos</div>
-              </div>
-              <div>
-                <div className="text-3xl font-black text-white">3</div>
-                <div className="text-sm text-gray-500 mt-1">Disciplinas</div>
-              </div>
+            <div className="pt-6 border-t border-white/10 max-w-lg">
+              <div className="text-3xl font-black text-white">7+</div>
+              <div className="text-sm text-gray-500 mt-1">Anos de experiencia</div>
             </div>
           </div>
         </div>
