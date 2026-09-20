@@ -14,10 +14,10 @@ const MethodologyStep = ({ number, title, delay = 0 }) => {
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="text-center">
-        <div className="text-6xl md:text-8xl font-bold text-light-gray-200 mb-4">
+        <div className="text-6xl md:text-8xl font-black text-red-primary mb-4">
           {number}
         </div>
-        <h3 className="text-3xl md:text-4xl font-bold text-black">
+        <h3 className="text-3xl md:text-4xl font-black text-white">
           {title}
         </h3>
       </div>
@@ -34,10 +34,10 @@ export const Methodology = () => {
   ];
 
   return (
-    <Section id="metodologia" className="bg-light-gray-50" animation="none">
+    <Section id="metodologia" className="bg-black" animation="none">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
-        <h2 className="text-5xl md:text-6xl font-bold text-black mb-24 text-center">
-          Metodología
+        <h2 className="text-5xl md:text-6xl font-black text-white mb-24 text-center">
+          METODOLOGÍA
         </h2>
 
         <div className="space-y-20 md:space-y-32">

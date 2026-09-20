@@ -14,17 +14,17 @@ const ServiceCard = ({ number, title, description, sports, delay = 0 }) => {
       `}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="p-12 md:p-16 border border-gray-200 rounded-lg hover:border-gray-400 transition-colors duration-300">
+      <div className="p-12 md:p-16 border-2 border-red-primary/30 rounded-xl hover:border-red-primary hover:bg-red-primary/5 transition-all duration-300 bg-black">
         <div className="mb-8">
-          <span className="text-6xl md:text-7xl font-light text-gray-300">
+          <span className="text-6xl md:text-7xl font-black text-red-primary">
             {number}
           </span>
         </div>
 
-        <h3 className="text-2xl md:text-3xl font-light mb-4 text-black">
+        <h3 className="text-2xl md:text-3xl font-black mb-4 text-white">
           {title}
         </h3>
-        <p className="text-base md:text-lg text-gray-600 font-light mb-6 leading-relaxed">
+        <p className="text-base md:text-lg text-gray-300 font-light mb-6 leading-relaxed">
           {description}
         </p>
 
@@ -33,7 +33,7 @@ const ServiceCard = ({ number, title, description, sports, delay = 0 }) => {
             {sports.map((sport) => (
               <span
                 key={sport}
-                className="text-xs font-light text-gray-500 border border-gray-300 px-3 py-1 rounded"
+                className="text-xs font-semibold text-red-primary border border-red-primary/50 px-3 py-1 rounded-full"
               >
                 {sport}
               </span>
@@ -71,10 +71,10 @@ export const Services = () => {
   ];
 
   return (
-    <Section id="servicios" className="bg-white" animation="none">
+    <Section id="servicios" className="bg-black" animation="none">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-5xl md:text-7xl font-light text-black mb-24 text-center tracking-tight">
-          Servicios
+        <h2 className="text-5xl md:text-7xl font-black text-white mb-24 text-center">
+          SERVICIOS
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">

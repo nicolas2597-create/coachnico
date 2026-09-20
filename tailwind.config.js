@@ -11,6 +11,11 @@ export default {
         white: "#FFFFFF",
         black: "#000000",
 
+        // Dark theme
+        "dark-bg": "#0A0A0A",
+        "dark-secondary": "#1A1A1A",
+        "dark-tertiary": "#2A2A2A",
+
         // Secondary Grays
         "light-gray": {
           50: "#F9F9F9",
@@ -29,8 +34,14 @@ export default {
           600: "#666666",
         },
 
-        // Accent (single color - adjust as needed)
-        accent: "#4A7CFF", // Example: Blue
+        // Accent - Red/Coral
+        accent: "#FF5555",
+        "accent-dark": "#E63E3E",
+        red: {
+          primary: "#FF5555",
+          dark: "#E63E3E",
+          light: "#FF7070",
+        }
       },
       fontFamily: {
         sans: [

@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
+
+:root {
+  --color-red: #FF5555;
+  --color-red-dark: #E63E3E;
+  --color-bg-dark: #0A0A0A;
+  --color-bg-secondary: #1A1A1A;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #CCCCCC;
+}
 
 @keyframes fadeInUp {
   from {
