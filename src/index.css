@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blurFocus {
+  from {
+    filter: blur(8px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleInSlow {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-blur-focus {
+  animation: blurFocus 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleInSlow 0.6s ease-out;
+}
+
+/* Glass Effect Utilities */
+.glass-morphism {
+  @apply backdrop-blur-[12px] bg-white/8 border border-white/15 rounded-2xl shadow-sm transition-all duration-300;
+}
+
+.glass-morphism:hover {
+  @apply backdrop-blur-[16px] bg-white/12 shadow-lg -translate-y-0.5;
+}
+
+.glass-button {
+  @apply backdrop-blur-[12px] bg-white/8 border border-white/15 rounded-xl transition-all duration-300;
+}
+
+.glass-button:hover {
+  @apply backdrop-blur-[16px] bg-white/12 shadow-lg -translate-y-0.5;
+}
+
+.glass-dark {
+  @apply backdrop-blur-[12px] bg-black/10 border border-white/10 rounded-2xl;
+}
+
+/* Image Utilities */
+.image-blur-load {
+  filter: blur(8px);
+  transition: filter 0.8s ease-out;
+}
+
+.image-blur-load.loaded {
+  filter: blur(0);
+}
+
+/* Section Spacing */
+.section {
+  @apply py-16 px-5 md:py-32 md:px-12;
+}
+
+/* Container */
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Utility classes */
+.text-gradient {
+  background: linear-gradient(135deg, #000000 0%, #333333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shadow-glass {
+  @apply shadow-sm;
+}
+
+.shadow-glass-hover {
+  @apply shadow-lg;
+}
